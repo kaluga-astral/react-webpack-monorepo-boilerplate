@@ -6,6 +6,11 @@
       {
         "pathGroups": [
           {
+            "pattern": "@example/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
             "pattern": "common/**",
             "group": "internal",
             "position": "after"
