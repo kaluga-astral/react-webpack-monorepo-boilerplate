@@ -9,15 +9,19 @@
     "lint:all": "eslint \"**/*.{ts,tsx,js,jsx}\" --fix --quiet",
     "lint:styles": "stylelint . --fix",
     "lint:styles:all": "stylelint '**/*{.ts,.tsx,.js,.jsx}' --fix",
-    "tests": "jest"
+    "tests": "jest",
+    "test:components:dev": "cypress open --component --browser chrome --config-file cypress/cypress.config.js",
+    "test:components": "cypress run --browser chrome --component --config-file cypress/cypress.config.js"
   },
   "dependencies": {
     "@astral/ui": "^1.16.3",
     "@astral/icons": "^1.16.3",
     "@example/static": "^1.0.0",
-    "react-router-dom": "^6.4.0"
+    "react-router-dom": "^6.4.0",
+    "@astral/fonts": "^1.16.3"
   },
   "devDependencies": {
-    "@example/tools": "^1.0.0"
+    "@example/tools": "^1.0.0",
+    "@example/cypress": "^1.0.0"
   }
 }

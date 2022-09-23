@@ -1,0 +1,16 @@
+{
+  "name": "@example/cypress",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint:types": "tsc --noEmit",
+    "lint": "eslint . --fix --quiet",
+    "lint:all": "eslint \"**/*.{ts,tsx,js,jsx}\" --fix --quiet"
+  },
+  "dependencies": {
+    "@cypress/react18": "^1.1.0",
+    "cypress": "^10.7.0",
+    "@testing-library/cypress": "^8.0.3",
+    "@example/tools": "^1.0.0"
+  }
+}

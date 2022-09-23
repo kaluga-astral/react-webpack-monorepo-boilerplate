@@ -1,3 +1,5 @@
+import { theme } from 'config';
+
 import {
   BrowserRouter,
   DashboardLayout,
@@ -15,7 +17,6 @@ import {
 } from '@example/common';
 import logoSrc from '@example/static/images/logo.png';
 
-import { theme } from './config/theme';
 import MainPage from './pages/main';
 import DocumentsPage from './pages/documents';
 

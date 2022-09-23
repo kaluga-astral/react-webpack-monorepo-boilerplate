@@ -65,7 +65,7 @@ const createConfig =
       ignoreWarnings: [/export .* was not found in/],
     });
 
-const cypressConfig = compose(
+const cypressWebpackConfig = compose(
   useTranspileModules({
     transpileModules: ['@astral/illustrations', '@astral/fonts', '@example'],
   }),
@@ -81,4 +81,4 @@ const cypressConfig = compose(
   ignoreWarnings: [/export .* was not found in/],
 });
 
-module.exports = { createConfig, cypressConfig };
+module.exports = { createConfig, cypressWebpackConfig };

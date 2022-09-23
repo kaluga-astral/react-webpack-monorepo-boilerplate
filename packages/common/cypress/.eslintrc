@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "parserOptions": {
+    "project": ["cypress/tsconfig.json"]
+  },
+  "extends": ["../../../.eslintrc"],
+  "rules": {
+    "import/no-extraneous-dependencies": "off"
+  }
+}

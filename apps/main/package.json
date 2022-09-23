@@ -10,16 +10,18 @@
     "lint:styles": "stylelint . --fix",
     "lint:styles:all": "stylelint '**/*{.ts,.tsx,.js,.jsx}' --fix",
     "tests": "jest --passWithNoTests",
-    "test:components:dev": "cypress open --component --browser chrome --config-file cypress/cypress.config.mjs",
-    "test:components": "cypress run --browser chrome --component --config-file cypress/cypress.config.mjs"
+    "test:components:dev": "cypress open --component --browser chrome --config-file cypress/cypress.config.js",
+    "test:components": "cypress run --browser chrome --component --config-file cypress/cypress.config.js"
   },
   "dependencies": {
     "@astral/illustrations": "^1.4.0",
-    "@astral/fonts": "^1.16.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "@example/common": "^1.0.0",
-    "@example/static": "^1.0.0",
+    "@example/static": "^1.0.0"
+  },
+  "devDependencies": {
+    "@example/cypress": "^1.0.0",
     "@example/tools": "^1.0.0"
   }
 }
