@@ -9,7 +9,11 @@
     "lint": "npm run lint --workspaces --if-present",
     "lint:types": "npm run lint:types --workspaces --if-present",
     "lint:styles": "npm run lint:styles --workspaces --if-present",
-    "tests": "npm run tests --workspaces --if-present"
+    "tests": "npm run tests --workspaces --if-present",
+    "main:dev": "npm run dev --workspace=@example/main",
+    "main:components-tests:dev": "npm run test:components:dev --workspace=@example/main",
+    "admin:dev": "npm run dev --workspace=@example/admin",
+    "admin:components-tests:dev": "npm run test:components:dev --workspace=@example/admin"
   },
   "dependencies": {
     "@types/react": "^18.0.17",
@@ -27,11 +31,8 @@
     "yaspeller": "^8.0.1",
     "stylelint": "^14.11.0",
     "jest": "^28.1.3",
-    "@types/jest": "^29.0.2",
+    "@types/jest": "29.0.2",
     "ts-jest": "^28.0.5",
-    "husky": "^4.3.8",
-    "@cypress/react18": "^1.1.0",
-    "cypress": "^10.7.0",
-    "@testing-library/cypress": "^8.0.3"
+    "husky": "^4.3.8"
   }
 }
